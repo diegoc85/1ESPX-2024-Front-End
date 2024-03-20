@@ -7,6 +7,44 @@
     text-transform: uppercase;
     border-radius: 10px;
     cursor: pointer;
+    /* Transition é uma animação. All é que vai pegar todas as propriedades */
+    transition: all 0.3s; 
+}
 
+.youtube:hover{
+   opacity: 80%;
+}
+
+.youtube:active{
+    opacity: 50%;
+}
+
+.join{
+    background-color: white;
+    color:rgb(6,95,212);
+    border: 1px solid rgb(6,95,212);
+    height: 36px;
+    width: 62px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* PSEUDO CLASSE - HOVER  */
+.join:hover{
+    background-color: rgb(6,95,212);
+    color:white;
+}
+
+.twitter{
+    background-color: rgb(29,155,240);
+    color:white;
+    border: 1px solid rgb(29,155,240);
+    border-radius: 50%;
+    height: 36px;
+    width: 90px;
+    cursor: pointer;
+    transition: all 1s;
 
 }
