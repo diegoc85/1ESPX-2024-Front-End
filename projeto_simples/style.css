@@ -62,3 +62,25 @@ nav img{
 
 }
 
+.banner-header{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-header .direita{
+    width: 55%;
+    background-color: aquamarine;
+}
+
+.banner-header .esquerda{
+    width: 40%;
+    min-width: 380px;
+}
+
+.banner-header h2{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #8b5cf6;
+    letter-spacing: 2px;
+}
