@@ -66,11 +66,12 @@ nav img{
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .banner-header .direita{
     width: 55%;
-    background-color: aquamarine;
+    
 }
 
 .banner-header .esquerda{
@@ -83,4 +84,54 @@ nav img{
     font-size: 0.9rem;
     color: #8b5cf6;
     letter-spacing: 2px;
+}
+.banner-header h1{
+    margin-top: 20px;
+    font-size: 2.4rem;
+}
+.banner-header p{
+    margin: 20px 0 60px 0;
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.banner-header .mini-message{
+    font-size: 0.85rem;
+}
+.dashboard{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+}
+.group-blocks{
+    width: 45%;
+    max-width: 270px;
+    min-width: 250px;
+    border: 1px solid red;
+}
+
+.block{
+    background-color: #444;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0,0, 0.1);
+    margin-top: 10px;
+}
+.block-a{
+    height: 300px;
+    background: rgb(53,56,73) ;
+    background: linear-gradient(162deg,rgba(53,56,73,1) 0%, rgba(51,65,82,1) 50%, rgba(40,124,143,1) 100%);
+}
+.block-b{
+    height: 120px;
+    background: purple ;
+}
+@media screen and(max-width:768px){
+    .banner-header .direita{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
 }
