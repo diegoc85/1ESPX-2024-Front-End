@@ -7,5 +7,22 @@ div {
 }
 
 .medida-porcentagem{
-    width: 50%;
+    width: 50%; 
+}
+.sub-grupo{
+    background-color: #fdeaba;
+}
+.medida-vw{
+    width: 50vw; /* pega a medida do vw que é a tela branca do site. 50% da tela */
+}
+.medida-vh{
+    height: 100vh;
+}
+.medida-em{
+    font-size: 2em; /* 1em = font-size = 16 px (padrao) 2em = 32px */
+    
+}
+.medida-rem{
+    font-size: 2rem; /* 2rem = 32px */
+    
 }
