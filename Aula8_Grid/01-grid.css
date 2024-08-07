@@ -1,0 +1,12 @@
+.container{
+    width: 80%;
+    margin: o auto;
+    border: 10px solid #9f0627; 
+}
+
+.item{
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}
