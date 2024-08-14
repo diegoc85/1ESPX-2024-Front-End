@@ -6,3 +6,15 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.box-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
