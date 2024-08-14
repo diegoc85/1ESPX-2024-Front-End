@@ -18,3 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.box-title h1{
+    font-size: 1.6rem;
+}
