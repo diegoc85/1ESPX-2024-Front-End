@@ -16,3 +16,21 @@ main{
 img{
     width: 100%;
 }
+
+h1,p{
+    color: green;
+}
+@media screen and (max-width:1024px) {
+    h1,p{
+        color: pink;
+    }
+    .subtitulo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    h1,p{
+        color: rgb(143,63,213);
+    }
+}
