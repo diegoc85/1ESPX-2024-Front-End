@@ -5,7 +5,7 @@ let inputMessage = document.getElementById('message');
 let chatlog = document.getElementById('chat-log');
 
 //ARRAY QUE IRÁ SALVAR O HISTÓRICO LOCAL DE MENSAGENS TROCADAS COM O GEMINI
-let menssagesGemini = []; 
+let messagesGemini = []; 
 
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
@@ -17,10 +17,10 @@ form.addEventListener('submit', (event) => {
         'role': 'user', 
         'parts': [{'text': messageText}],
     };
-    menssagesGemini.push(newMessageGemini);
+    messagesGemini.push(newMessageGemini);
     inputMessage.value = '';
 
-    console.log(menssagesGemini);
+    console.log(messagesGemini);
 
     let messageElement = document.createElement('div');
     messageElement.classList.add('message');
@@ -39,6 +39,17 @@ form.addEventListener('submit', (event) => {
             messagesGemini
         })
     })
-        .then(res => res.json);
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.chat_completion);
+
+            let messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+    messageElement.classList.add('message--assistant');
+    messageElement.innerHTML = `
+        <div class = 'message__text'>${data.chat_completion}</div>
+    `;
+    chatlog.appendChild(messageElement);
+        })
 
 });
