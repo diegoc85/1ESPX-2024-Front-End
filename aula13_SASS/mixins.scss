@@ -1,0 +1,22 @@
+@mixin div-size ($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin default-config(){
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    @include div-size(80%,100vh); 
+    background-color: #e7e7e7;
+    margin: 0 auto;
+
+    .box {
+        @include div-size(300px, 200px);
+        @include div-style(); 
+    }
+}
